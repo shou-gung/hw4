@@ -247,8 +247,8 @@ protected:
     virtual void nodeSwap( Node<Key,Value>* n1, Node<Key,Value>* n2) ;
 
     // Add helper functions here
-    Node<Key, Value>* insertRec(Node<Key, Value> *node, Node<Key, Value> *parent, const std::pair<const Key, Value> &keyValuePair);
-    Node<Key, Value>* removeRec(Node<Key, Value> *node, const Key& key);
+    virtual Node<Key, Value>* insertRec(Node<Key, Value> *node, Node<Key, Value> *parent, const std::pair<const Key, Value> &keyValuePair);
+    virtual Node<Key, Value>* removeRec(Node<Key, Value> *node, const Key& key);
     void clearRec(Node<Key, Value> *n);
     static Node<Key, Value>* successor(Node<Key, Value>* current);
     int getHeight(Node<Key, Value> *r) const;
